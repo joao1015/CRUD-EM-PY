@@ -24,7 +24,7 @@ def connect_db():
 
 @app.route('/api/oficinas', methods=['GET'])
 def get_oficinas():
-    """Endpoint para buscar todas as oficinas."""
+    """Endpoint para buscar todas as oficinas..."""
     connection = connect_db()
     if not connection:
         return jsonify({'error': 'Database connection failed'}), 500
